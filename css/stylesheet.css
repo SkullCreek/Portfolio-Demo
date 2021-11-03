@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    width: 100%;
+}
+
+#loader-con{
+    width: 100%;
+    min-height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+#loader{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    animation: beat 2s infinite;
+    transition: all 2s;
+}
+
+@keyframes beat {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.5);}
+    100%{transform: scale(1);}
+}
+
+
+/* start nav coding */
+
+#menu{
+    display: none;
+}
+
+/* end nav coding */
