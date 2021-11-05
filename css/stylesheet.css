@@ -19,6 +19,7 @@ body{
     display: grid;
     place-items: center;
     overflow: hidden;
+    z-index: 1000;
 }
 
 #loader{
@@ -37,10 +38,72 @@ body{
 }
 
 
-/* start nav coding */
+/* start mobile nav coding */
 
-#menu{
+#menu, .slicknav_menu, .desk-menu{
     display: none;
 }
 
-/* end nav coding */
+@media screen and (max-width:992px){
+    .slicknav_menu{
+        display: block;
+    }
+}
+@media screen and (min-width:992px){
+    .desk-menu{
+        display: block;
+    }
+}
+
+/* end mobile nav coding */
+
+/* start desktop menu coding */
+
+.desk-menu{
+    list-style: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.brand-name{
+    float: left;
+    padding: 15px;
+}
+
+.brand-name li a{ 
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+}
+.top-right-nav{
+    float: right;
+}
+.top-right-nav li{
+    display: inline-block;
+    padding: 22px 20px;
+}
+
+.top-right-nav li a{
+    font-weight: 600;
+    color: white;
+}
+.top-right-nav li:hover{
+    background-color: white;
+}
+.top-right-nav li:hover a{
+    color: black;
+}
+/* end desktop menu coding */
+/* start big header coding */
+.big-slider{
+
+    z-index: -1;
+}
+/* end big header coding */

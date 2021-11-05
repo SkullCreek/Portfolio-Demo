@@ -23,3 +23,11 @@ $(function(){
         brand : 'SkullCreek'
     });
 });
+
+//slicknav coding
+
+// start big slider
+$(document).ready(function() {
+    $(".skitter-large").skitter();
+  });
+//end big slider
