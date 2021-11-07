@@ -32,7 +32,7 @@ $(function(){
 $(document).ready(function() {
     $(".skitter-large").skitter({
         label : false,
-        dots :false,
+        dots : false,
     });
   });
 
@@ -40,8 +40,31 @@ $(document).ready(function() {
     
     $(".picone-header").slideDown(1000,function(){
         $(".picone-btn").fadeIn(1500,function(){
-            $(".picone-header, .picone-btn").delay(100).fadeOut();
+            $(".picone-header, .picone-btn").delay(50).fadeOut(function(){
+                $(".pic2-header").fadeIn(1000,function(){
+                    $(".pic2-para").show(1500, function(){
+                        $(".pic2-header, .pic2-para").delay(3500).fadeOut();
+                    });
+                });
+            });
         });
     });
+});
+
+$(document).ready(function(){
+    setInterval(function(){
+    
+        $(".picone-header").slideDown(1000,function(){
+            $(".picone-btn").fadeIn(1500,function(){
+                $(".picone-header, .picone-btn").delay(50).fadeOut(function(){
+                    $(".pic2-header").fadeIn(1000,function(){
+                        $(".pic2-para").show(1500, function(){
+                            $(".pic2-header, .pic2-para").delay(3500).fadeOut();
+                        });
+                    });
+                });
+            });
+        });
+    },10500);
 });
 //end big slider

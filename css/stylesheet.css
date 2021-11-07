@@ -7,6 +7,7 @@
 
 body{
     width: 100%;
+    background-color: black;
 }
 
 #loader-con{
@@ -47,12 +48,260 @@ body{
 @media screen and (max-width:992px){
     .slicknav_menu{
         display: block;
+        z-index: 10;
     }
 }
+
 @media screen and (min-width:992px){
     .desk-menu{
         display: block;
     }
+    /* start big header coding */
+    .big-slider{
+
+        z-index: -1;
+    }
+    /* end big header coding */
+
+    /* start slider label */
+
+    .slider-label{
+        width: 100%;
+        height: 1080px;
+        float: left;
+        margin-top: -1030px;
+    }
+    .picone-header{
+        margin-top: 350px;
+        font-size: 50px;
+        color: white;
+        display: none;
+    }
+
+    .picone-btn{
+        width: 105px;
+        padding: 15px;
+        font-weight: bold;
+        margin-top: 30px;
+        border: none;
+        background-color: transparent;
+        display: none;
+        position: relative;
+    }
+
+    .picone-btn::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: all 0.3s;
+        border-top: 3px solid white;
+        border-left: 3px solid white;
+        top: 0;
+        left: 0;
+    }
+    .picone-btn::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: all 0.3s;
+        border-bottom: 3px solid white;
+        border-right: 3px solid white;
+        bottom: 0;
+        right: 0;
+    }
+    .picone-btn:hover::before,.picone-btn:hover::after{
+        width: 10%;
+            height: 10%;
+            transform: rotate(360deg);
+    }
+
+    .picone-btn a{
+        color: white;
+    }
+    /* start slider label */
+    /* Start label */
+
+    .pic2-header{
+        margin-top: 450px;
+        font-size: 80px;
+        color: #fff;
+        display: none;
+    }
+    .pic2-para{
+        font-size: 50px;
+        margin-top: -50px;
+        color: rgb(96, 255, 242);
+        display: none;
+    }
+    /* end label */
+}
+
+@media screen and (max-width:1250px) and (min-width:992px){
+    /* start big header coding */
+    .big-slider{
+
+        z-index: -1;
+    }
+    /* end big header coding */
+        /* start slider label */
+
+        .slider-label{
+            width: 100%;
+            height: 220px;
+            float: left;
+            margin-top: -500px;
+            z-index: -2;
+        }
+        .picone-header{
+            margin-top: 30px;
+            font-size: 50px;
+            color: white;
+            display: none;
+        }
+    
+        .picone-btn{
+            width: 105px;
+            padding: 15px;
+            font-weight: bold;
+            margin-top: 30px;
+            border: none;
+            background-color: transparent;
+            display: none;
+            position: relative;
+        }
+    
+        .picone-btn::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: all 0.3s;
+            border-top: 3px solid white;
+            border-left: 3px solid white;
+            top: 0;
+            left: 0;
+        }
+        .picone-btn::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: all 0.3s;
+            border-bottom: 3px solid white;
+            border-right: 3px solid white;
+            bottom: 0;
+            right: 0;
+        }
+        .picone-btn:hover::before,.picone-btn:hover::after{
+            width: 10%;
+                height: 10%;
+                transform: rotate(360deg);
+        }
+    
+        .picone-btn a{
+            color: white;
+        }
+        /* start slider label */
+        /* Start label */
+    
+        .pic2-header{
+            margin-top: 80px;
+            font-size: 50px;
+            color: #fff;
+            display: none;
+        }
+        .pic2-para{
+            font-size: 50px;
+            margin-top: -40px;
+            color: rgb(96, 255, 242);
+            display: none;
+        }
+        /* end label */
+}
+
+@media screen and (max-width:992px){
+    /* start big header coding */
+    .big-slider{
+
+        z-index: -1;
+    }
+    /* end big header coding */
+        /* start slider label */
+
+        .slider-label{
+            width: 100%;
+            height: 220px;
+            float: left;
+            margin-top: -220px;
+            z-index: -2;
+        }
+        .picone-header{
+            margin-top: 30px;
+            font-size: 30px;
+            color: white;
+            display: none;
+        }
+    
+        .picone-btn{
+            width: 105px;
+            padding: 15px;
+            font-weight: bold;
+            margin-top: 30px;
+            border: none;
+            background-color: transparent;
+            display: none;
+            position: relative;
+        }
+    
+        .picone-btn::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: all 0.3s;
+            border-top: 3px solid white;
+            border-left: 3px solid white;
+            top: 0;
+            left: 0;
+        }
+        .picone-btn::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: all 0.3s;
+            border-bottom: 3px solid white;
+            border-right: 3px solid white;
+            bottom: 0;
+            right: 0;
+        }
+        .picone-btn:hover::before,.picone-btn:hover::after{
+            width: 10%;
+                height: 10%;
+                transform: rotate(360deg);
+        }
+    
+        .picone-btn a{
+            color: white;
+        }
+        /* start slider label */
+        /* Start label */
+    
+        .pic2-header{
+            margin-top: 80px;
+            font-size: 30px;
+            color: #fff;
+            display: none;
+        }
+        .pic2-para{
+            font-size: 20px;
+            margin-top: -20px;
+            color: rgb(96, 255, 242);
+            display: none;
+        }
+        /* end label */
 }
 
 /* end mobile nav coding */
@@ -96,44 +345,9 @@ a{
 }
 .top-right-nav li:hover{
     background-color: white;
+    transition: 1s;
 }
 .top-right-nav li:hover a{
     color: black;
 }
 /* end desktop menu coding */
-/* start big header coding */
-.big-slider{
-
-    z-index: -1;
-}
-/* end big header coding */
-
-/* start slider label */
-
-.slider-label{
-    width: 100%;
-    height: 1080px;
-    float: left;
-    margin-top: -1030px;
-}
-.picone-header{
-    margin-top: 350px;
-    font-size: 50px;
-    color: white;
-    display: none;
-}
-
-.picone-btn{
-    width: 105px;
-    border: 2px solid white;
-    padding: 15px;
-    font-weight: bold;
-    margin-top: 30px;
-    background-color: transparent;
-    display: none;
-}
-
-.picone-btn a{
-    color: white;
-}
-/* start slider label */

@@ -79,6 +79,7 @@
   font-size: 16px;
   box-sizing: border-box;
   background: rgb(0, 0, 0);
+  z-index: 1000;
   padding: 10px;}
   .slicknav_menu * {
     box-sizing: border-box; }
