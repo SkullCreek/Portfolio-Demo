@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    color: white;
 }
 
 body{
@@ -302,6 +303,26 @@ body{
             display: none;
         }
         /* end label */
+        section #first-work div{
+            width: 100%!important;
+            text-align: center;
+            margin-top: 50px;
+
+        }
+
+        section #first-work img{
+            margin-top: 30px;
+        }
+        section{
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+        }
+        section #heading{
+            font-size: 40px!important;
+            margin-top: 30px;
+            margin-bottom: 20px!important;
+        }
 }
 
 /* end mobile nav coding */
@@ -314,7 +335,8 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: black;
+    z-index: 1000;
+    background-color: rgb(0, 0, 0);
 }
 
 a{
@@ -351,3 +373,59 @@ a{
     color: black;
 }
 /* end desktop menu coding */
+/* my Work */
+section{
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    flex-direction: column;
+    
+}
+section #heading{
+    font-size: 80px;
+    margin-bottom: 70px;
+}
+
+section #first-work{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+section #first-work div{
+    width: 30%;
+    font-size: 25px;
+}
+section #first-work h1{
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: rgb(96, 255, 242);
+}
+
+.btn-sec{
+    width: 100px;
+    height: 100px;
+    padding: 25px 30px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+.btn-sec a{
+    color: white;
+}
+
+.btn-sec:hover span{
+    transform: rotate(-45deg);
+    color: black;
+}
+.btn-sec:hover{
+    background-color: white;
+}

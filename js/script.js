@@ -43,7 +43,7 @@ $(document).ready(function() {
             $(".picone-header, .picone-btn").delay(50).fadeOut(function(){
                 $(".pic2-header").fadeIn(1000,function(){
                     $(".pic2-para").show(1500, function(){
-                        $(".pic2-header, .pic2-para").delay(3500).fadeOut();
+                        $(".pic2-header, .pic2-para").delay(3800).fadeOut();
                     });
                 });
             });
@@ -59,7 +59,7 @@ $(document).ready(function(){
                 $(".picone-header, .picone-btn").delay(50).fadeOut(function(){
                     $(".pic2-header").fadeIn(1000,function(){
                         $(".pic2-para").show(1500, function(){
-                            $(".pic2-header, .pic2-para").delay(3500).fadeOut();
+                            $(".pic2-header, .pic2-para").delay(3800).fadeOut();
                         });
                     });
                 });
