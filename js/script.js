@@ -1,3 +1,11 @@
+//safety
+document.onkeydown = function(a)
+{
+    if(a.ctrlKey && a.keyCode == 85 || a.ctrlKey && a.keyCode == 67){
+        return false;
+    }
+}
+//safety
 //javascript document
 
 window.onload = function()
@@ -68,3 +76,4 @@ $(document).ready(function(){
     },10500);
 });
 //end big slider
+
