@@ -346,6 +346,9 @@ body::-webkit-scrollbar-thumb{
             padding: 10px 20px!important;
             text-align: center;
         }
+        #about-me{
+            padding: 0px!important;
+        }
     /* end slider label */
 }
 
