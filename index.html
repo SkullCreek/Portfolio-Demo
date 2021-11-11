@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" oncontextmenu="return true;">
+<html lang="en" oncontextmenu="return false;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,10 +28,10 @@
     <!-- start mobile nav coding -->
     <ul id="menu">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">Services</a></li>
+        <li><a href="#blog-head">Blog</a></li>
+        <li><a href="#contact-us">Contact us</a></li>
     </ul>
     <!-- end mobile nav coding -->
 
@@ -43,10 +43,10 @@
         </div>
         <div class="top-right-nav">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">Services</a></li>
+            <li><a href="#blog-head">Blog</a></li>
+            <li><a href="#contact-us">Contact us</a></li>
         </div>
     </ul>
 
@@ -78,7 +78,7 @@
     <!-- start slider label -->
       <div class="slider-label"><center>
         <h1 class="picone-header">Hey I'm Darpan Bahadur</h1>
-        <button class="picone-btn"><a href="#">Let's talk</a></button>
+        <button class="picone-btn"><a href="#contact-us">Let's talk</a></button>
 
         <h1 class="pic2-header">About me!</h1>
         <p class="pic2-para">I'm a front-end web developer</p>
@@ -87,7 +87,7 @@
     <!-- end slider label -->
 
     <!-- My Work Content -->
-      <section>
+      <section id="work">
         <h1 id="heading">My Work</h1>
         <div id="first-work">
           <img src="images/project1.png" alt="">
@@ -155,7 +155,7 @@
             <h1>My Skills</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum libero delectus dicta expedita id inventore esse soluta nostrum sint, sunt consequatur corporis officiis voluptatem praesentium perspiciatis qui laudantium et. Illo harum cupiditate autem nemo natus. Necessitatibus saepe facilis ab ullam quisquam. Voluptas reprehenderit veniam, totam odio at magni rem quisquam!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odit iste iusto molestias distinctio, veritatis adipisci magni numquam sequi libero quisquam nobis velit itaque natus qui consectetur?</p>
-            <button><a href="#">Let's talk</a></button>
+            <button><a href="#contact-us">Let's talk</a></button>
           </div>
           <div id="skill graph" >
             <p>HTML</p>
@@ -171,7 +171,8 @@
 
       </div>
     <!-- about me -->
-    <div>
+    <!-- blog -->
+    <div id="blog-head">
       <h1 id="blog-heading">Blogs</h1>
     </div>
     <div id="blog">
@@ -194,9 +195,60 @@
         <button><span class="material-icons">arrow_forward</span></button>
       </div>
     </div>
+    <!-- blog -->
+    <!-- contact us -->
+    <div id="contact-us">
+      <h1>We’ d love to hear from you.</h1>
+      <form action="">
+        <div>
+          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Your Message">
+        </div>
+        <button class="btn-sec"><a href="#"><span class="material-icons">arrow_forward</span></a></button>
+      </form>
+    </div>
+    <!-- contact us -->
 
-    <!-- about me -->
+    <!-- Footer -->
 
+    <footer>
+      <div id="upper">
+        <div id="logo">
+          <h1>SkullCreek</h1>
+          <p>darpanhh11819@gmail.com</p>
+          <p>+91-900-847-4779</p>
+        </div>
+        <div id="footer-content">
+          <ul>
+            <h5>Legal</h5>
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">Privacy Policies</a></li>
+          </ul>
+          <ul>
+            <h5>Pages</h5>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+          <ul>
+            <h5>Contact Us</h5>
+            <li><a href="#">darpanhh11819@gmail.com</a></li>
+            <li><a href="#">+91-900-847-4779</a></li>
+            <li><a href="#">+91-999-872-6601</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="social">
+        <img src="images/facebook.svg" alt="">
+        <img src="images/linkedin.svg" alt="">
+        <img src="images/github.svg" alt="">
+        <img src="images/twitter.svg" alt="">
+      </div>
+    </footer>
+
+    <!-- Footer -->
+    <a href="#" class="scrolltop">
+      <span class="material-icons">expand_less</span>
+    </a>
     <script src="js/script.js"></script>
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/jquery.skitter.js"></script>

@@ -356,6 +356,46 @@ body::-webkit-scrollbar-thumb{
     div#blog1,div#blog2,div#blog3{
         width: 100%;
     }
+    #contact-us{
+        padding: 15px 30px!important;
+        
+    }
+    #contact-us h1{
+        font-size: 40px!important;
+    }
+    #contact-us input[type=text]{
+        width: 100%!important;
+        margin-bottom: 60px;
+        
+    }
+    #contact-us form div{
+        padding: 50px 0!important;
+    }
+    footer{
+        padding: 10px 20px!important;
+    }
+    footer h1{
+        font-size: 54px!important;
+    }
+    footer #upper #logo{
+        width: 100%!important;
+        text-align: center!important;
+        padding-bottom: 20px;
+    }
+    footer #upper #footer-content{
+        width: 100%!important;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    footer #upper #footer-content h5{
+        font-size: 18px!important;
+    }
+    footer #upper #footer-content a{
+        font-size: 12px!important;
+    }
+    footer #upper #footer-content ul{
+        width: 32%!important;
+    }
 }
 
 /* end mobile nav coding */
@@ -435,7 +475,7 @@ section #first-work div{
 section #first-work h1{
     font-size: 35px;
     margin-bottom: 30px;
-    color: rgb(96, 255, 242);
+    color: #60fff2;
 }
 
 .btn-sec{
@@ -687,4 +727,106 @@ section #first-work h1{
 }
 #blog button:hover span{
     color: black;
+}
+
+#contact-us{
+    width: 100%;
+    padding: 51px 104px;
+    background-color: #181818;
+}
+#contact-us h1{
+    font-size: 48px;
+    padding-bottom: 50px;
+    color: rgb(96, 255, 242);
+}
+#contact-us form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+#contact-us form div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px 0px;
+}
+#contact-us form div input[type=text]{
+    width: 40%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    padding: 10px 0px;
+    height: 50px;
+    font-size: 36px;
+}
+#contact-us form div input[type=text]:focus{
+    outline: none;
+}
+#contact-us form div input[type=text]::placeholder{
+    color: white;
+    font-size: 36px;
+}
+
+/* Footer coding */
+ul{
+  list-style: none;  
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+footer #upper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer #upper #logo{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer #upper #logo h1{
+    font-size: 64px;
+    color: rgb(96, 255, 242);
+}
+footer #upper #footer-content{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    line-height: 30px;
+}
+#social{
+    cursor: pointer;
+}
+footer #upper #footer-content h5{
+    font-size: 24px;
+    color: rgb(96, 255, 242);
+}
+footer #upper #footer-content a{
+    word-wrap: break-word;
+}
+/* footer coding */
+
+.scrolltop{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    font-size: 30px;
+    border: 2px solid rgb(96, 255, 242);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 7px;
+    display: none;
 }
